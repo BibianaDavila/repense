@@ -7,23 +7,23 @@
     src: url(../fonts/futura/FuturaPTHeavy.otf);
 }
 body{
-	font-family: 'Forum';
-	font-size: 16pt;
-	line-height: 20pt;
+    font-family: 'Forum';
+    font-size: 16pt;
+    line-height: 20pt;
 }
 section {
     width: 100%;
     position: relative;
 }
 section article{
-	z-index: 2;
-	display: table;
+    z-index: 2;
+    display: table;
     min-height: 100vh;
     width: 100%;
 }
 h1,h2,h3,h4,h5,h6{font-family: 'Futura' !important;}
 h2{
-	letter-spacing: 3px;
+    letter-spacing: 3px;
 }
 .content-center{
     display: table-cell;
@@ -34,7 +34,7 @@ h2{
 /*=== site home ===*/
 
 .overlay-bg{
-	position: fixed;
+    position: fixed;
     height: 100vh;
     width: 100%;
     background-attachment: fixed;
@@ -45,43 +45,51 @@ h2{
     z-index: -1;
 }
 .overlay-bg.dois{
-	background-image: url(../img/bg2.png);
+    background-image: url(../img/bg2.png);
 }
 .site-title{
-	line-height: 75px;
-	font-size: 71.5pt;
-	letter-spacing: 5px;
-	text-transform: lowercase;
+    line-height: 75px;
+    font-size: 71.5pt;
+    letter-spacing: 5px;
+    text-transform: lowercase;
 }
 .site-title span{
-	padding-left: 9px;
-	font-size: 60pt;
-	text-transform: uppercase;
-	letter-spacing: 10px;
-	font-family: Futura Bold;
+    padding-left: 9px;
+    font-size: 60pt;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-family: Futura Bold;
 }
 
 
 .content{
-	padding: 75px 0px 50px 0px;
+    padding: 75px 0px 50px 0px;
 }
 .content-box{
-	padding: 100px 50px 35px 50px;
-	background-color: #FFF;
+    padding: 100px 50px 35px 50px;
+    background-color: #FFF;
     border-left: 6px solid #000;
     border-top: 6px solid #000;
     border-right: 6px double#000;
     border-bottom: 6px double#000;
 }
 .content-box h2{
-	text-align: center;
+    text-align: center;
 }
 .content-box hr{
-	margin-top: 15px;
+    margin-top: 15px;
     margin-bottom: 35px;
     border-top: 1.1px dashed black;
 }
 .img-up img{
-	margin-bottom: -85px;
+    margin-bottom: -85px;
     width: 175px;
+}
+
+
+
+@media only screen and (max-width: 768px){
+    .overlay-bg{
+        background-size: 315px auto;
+    }   
 }
