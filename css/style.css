@@ -1,95 +1,104 @@
-@font-face {
-    font-family: Futura;
-    src: url(../fonts/futura/FuturaPTBook.otf);
-}
-@font-face {
-    font-family: Futura Bold;
-    src: url(../fonts/futura/FuturaPTHeavy.otf);
-}
-body{
-    font-family: 'Forum';
-    font-size: 16pt;
-    line-height: 20pt;
-}
-section {
-    width: 100%;
-    position: relative;
-}
-section article{
-    z-index: 2;
-    display: table;
-    min-height: 100vh;
-    width: 100%;
-}
-h1,h2,h3,h4,h5,h6{font-family: 'Futura' !important;}
-h2{
-    letter-spacing: 3px;
-}
-.content-center{
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-}
+
 
 /*=== site home ===*/
 
-.overlay-bg{
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    background-attachment: fixed;
-    background-image: url(../img/bg1.png);
-    background-repeat: repeat;
-    background-position-x: center;
-    background-size: 500px auto; 
-    z-index: -1;
-}
-.overlay-bg.dois{
-    background-image: url(../img/bg2.png);
-}
-.site-title{
-    line-height: 75px;
-    font-size: 71.5pt;
-    letter-spacing: 5px;
-    text-transform: lowercase;
-}
-.site-title span{
-    padding-left: 9px;
-    font-size: 60pt;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    font-family: Futura Bold;
-}
+
+
 
 
 .content{
-    padding: 75px 0px 50px 0px;
+	padding: 75px 0px 150px 0px;
 }
 .content-box{
-    padding: 100px 50px 35px 50px;
-    background-color: #FFF;
+	padding: 100px 50px 35px 50px;
+	background-color: #FFF;
     border-left: 6px solid #000;
     border-top: 6px solid #000;
     border-right: 6px double#000;
     border-bottom: 6px double#000;
 }
 .content-box h2{
-    text-align: center;
+	text-align: center;
 }
-.content-box hr{
-    margin-top: 15px;
-    margin-bottom: 35px;
-    border-top: 1.1px dashed black;
-}
+
 .img-up img{
-    margin-bottom: -85px;
-    width: 175px;
+	padding-right: 15px;
+    width: 100%;
+    vertical-align: top;
 }
 
 
 
 @media only screen and (max-width: 768px){
-    .overlay-bg{
-        background-size: 315px auto;
-    }   
+	.overlay-bg{
+		background-size: 315px auto;
+	}	
+}
+
+
+
+.section-transition{
+	margin-bottom: -5px;
+	width: 100%;
+	height: 130px;
+}
+#um{background-color: #c5eceac9;}
+#dois{background-color: #89bdbac9;}
+#tres{background-color: #e1dfcf;}
+#quatro{background-color: #5ab08c;}
+
+.section-transition.home{
+	fill: #c5eceac9;
+}
+.section-transition.um{
+	background: #c5eceac9;
+	fill: #89bdba;
+}
+.section-transition.dois{
+	background: #89bdbac9;
+	fill: #e1dfcf;
+}
+.section-transition.tres{
+	background: #e1dfcf;
+	fill: #5ab08c;
+}
+.section-transition.quatro{
+	background: #5ab08c;
+	fill: #3aa67c;
+}
+
+
+
+.gota{
+	margin: auto;
+	
+}
+
+.img-gt{
+	height: 100%;
+	width: 100%;
+}
+.img-gt img{
+	transition: .2s all ease-in;
+	max-height: 100%;  
+    max-width: 350px; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    bottom: 0;  
+    right: 0;  
+    margin: auto;
+}
+.img-gt img.earth{
+    transform: rotate(340deg);
+}
+
+.img-gt-rel img.fish{
+	transition: .2s all ease;
+	left: 0px;
+	max-width: 400px;
+    transform: rotate(0deg);
+}
+.img-gt-rel img.fish.ani{
+    transform: rotate(-25deg);
 }
