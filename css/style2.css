@@ -26,6 +26,7 @@ body{
     font-family: 'Didact Gothic';
     font-size: 16pt;
     line-height: 20pt;
+    max-width: 100%;
     overflow-x: hidden;
     padding-bottom: 100vh;
 }
@@ -209,5 +210,19 @@ hr{
     }
     #prim .bubble-img img{
         max-width: 130px;
+    }
+    #prim .bubble{
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+        transform: none;
+    }
+    #prim .bubble-text{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 30px;
+        transform: none;
     }
 }
