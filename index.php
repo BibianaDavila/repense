@@ -90,7 +90,7 @@
 
 					<div class="content-center">
 						<div class="title text-center">
-							<h1>CHEGOU A HORA DE <br/>REPENSAR NOSSOS HÁBITOS</h1>
+							<h1>CHEGOU A HORA DE <br class="hide-xs"/>REPENSAR NOSSOS HÁBITOS</h1>
 						</div>
 					</div>
 
