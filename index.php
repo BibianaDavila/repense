@@ -182,11 +182,4 @@
 			</article>
 		</section>
 	</div>
-	<footer>
-		<div class="content-center">
-			<div class="title text-center">
-				<h4>Porto Alegre, julho de 2018</h4>
-			</div>
-		</div>
-	</footer>
 </body>
