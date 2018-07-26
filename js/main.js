@@ -20,7 +20,6 @@ function animation(){
 	}
 	/* primeiro */
 	else if(scroll<sec2){
-		$('.earth').css('marginTop',scroll/3);
 		$('.earth').css('marginLeft',scroll/3);
 	}
 	/* segundo */
