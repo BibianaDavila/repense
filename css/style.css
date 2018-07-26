@@ -407,4 +407,7 @@ footer{
     .hide-xs{
     	display: none;
     }
+    .overlay-bg{
+    	background-size: 400px auto;
+    }
 }
