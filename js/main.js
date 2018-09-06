@@ -9,10 +9,14 @@ jQuery.fn.rotate = function(degrees) {
     return $(this);
 };
 function animation(){
-	var scroll = $(document).scrollTop();
-	$('.overlay-bg').css('background-position-y',scroll/4);
-	$('.overlay-bg.dois').css('background-position-y',scroll/3);
 
+
+	var scroll = $(document).scrollTop();
+	
+	if($(window).width()>480){
+		$('.overlay-bg').css('background-position-y',scroll/4);
+		$('.overlay-bg.dois').css('background-position-y',scroll/3);
+	}
 	var height = 100-scroll/3;
 	//$('#home article').css('min-height',height+'vh');
 
