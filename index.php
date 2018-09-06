@@ -11,15 +11,34 @@
 	<script src="js/main.js"></script>
 
 	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico" />
 
 </head>
 
 <body>	
+	<section id="menu" class="close">
+		<article>
+			<div id="close" class="text-right"><i class="fa fa-times"></i></div>
+			<div class="content-center">
+				<h2><img src="img/repense.png" class="logo-menu"/>REPENSE O MUNDO</h2>
+				<hr/>
+
+				<p>UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL, 2018</p>
+				<p>Projeto resultante da cadeira <b>Comunicação e Cidadania</b>, da Faculdade de Biblioteconomia e Comunicação</p>
+				<br/>
+				<p><i class="fa fa-code"></i> Desenvolvido por <a href="mailto:davila.bibiana@gmail.com"><b>Bibiana Davila</b></a> (Jornalismo/UFRGS)</p>
+				<p><i class="fa fa-paint-brush"></i> Ilustrações por <b>Tábata Costa</b> (Artes Visuais/UFRGS)</p>
+
+			</div>
+		</article>
+	</section>
 	<div class="site-wrapper">
+		<div id="open" class="text-right"><i class="fa fa-bars"></i></div>
 		<section id="home">
 			<div class="overlay-bg"></div>
 			<div class="overlay-bg dois"></div>
@@ -64,11 +83,11 @@
 
 						<hr/>
 
-						<p>De acordo com a ONU Meio Ambiente, os oceanos recebem, anualmente, ao menos <b>8 milhões de toneladas de plástico</b>.</p>
+						<p>De acordo com a ONU Meio Ambiente, os oceanos recebem, anualmente, ao menos <a href="https://www.facebook.com/ONUMeioAmbiente/videos/1378230242256066/">8 milhões de toneladas de plástico</a>.</p>
 
 						<p>É como se jogassemos 250kg de lixo por segundo em nossas águas.</p>
 
-						<p>Para se ter uma ideia, pesquisas apontam que até 2050 os mares vão ter <b>mais plástico do que peixes</b>.</p>
+						<p>Para se ter uma ideia, pesquisas apontam que até 2050 os mares vão ter <a href="https://nacoesunidas.org/onu-lanca-campanha-contra-poluicao-dos-oceanos-provocada-por-consumo-de-plastico/">mais plástico do que peixes</a>.</p>
 
 					</div>
 				</div>
@@ -90,6 +109,7 @@
 
 					<div class="content-center">
 						<div class="title text-center">
+							<img src="img/repense.png" class="img-repense"/> 
 							<h1>CHEGOU A HORA DE <br class="hide-xs"/>REPENSAR NOSSOS HÁBITOS</h1>
 						</div>
 					</div>
@@ -106,7 +126,7 @@
 
 						<hr/>
 
-						<p>Na hora de descartar materias, tenha em mente que existem dois tipos de lixo.</p>
+						<p>Na hora de descartar materias, tenha em mente que existem <a href="http://www.iclei.org.br/residuos/site/?p=231">dois tipos básicos de lixo</a>:</p>
 
 						<p><h5>LIXO SECO:</h5> Tudo que pode ser reciclado, como plástico, papel, vidro, alumínio. </p>
 
@@ -125,12 +145,20 @@
 
 						<hr/>
 
-						<p>Apesar do PET ser reciclável, pesquisas mostram que, no Brasil, ao menos 50% das garrafas não são recicladas.</p>
+						<p>Apesar do PET ser reciclável, pesquisas mostram que, no Brasil, ao menos <a href="https://www1.folha.uol.com.br/seminariosfolha/2016/06/1784366-brasil-deixa-de-reciclar-metade-das-garrafas-pet-jogadas-no-lixo.shtml">50% das garrafas não são recicladas</a>.</p>
 
-						<p>Na hora de comprar bebidas, procure consumir <b>latas de alumínio</b>. A taxa de reciclagem das latinhas chega a 98% no país!</p>
+						<p>Na hora de comprar bebidas, procure consumir <b>latas de alumínio</b>. <a href="http://agenciabrasil.ebc.com.br/geral/noticia/2016-10/brasil-recicla-98-das-latinhas-de-aluminio-de-bebidas">A taxa de reciclagem das latinhas chega a 98% no país!</a></p>
 
 						<p>Já na hora de beber água, prefira ter sua própria garrafa em mãos. </p>
 
+					</div>
+				</div>
+				<div class="bubble-img-container">
+					<div class="bubble-img">
+						<div class="text-center">	
+							<img src="img/gar.png" class="img-gar um">
+							<img src="img/garrafa.png" class="img-gar dois">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -181,5 +209,6 @@
 				</div>
 			</article>
 		</section>
+		<div class="text-center"><p><h6>Universidade Federal do Rio Grande do Sul. Porto Alegre, 2018</h6></p></div>
 	</div>
 </body>

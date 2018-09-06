@@ -71,6 +71,52 @@ hr{
     margin: 15px 0px 30px 0px;
     border-top: 12px dotted #ffffff;
 }
+#menu{
+    position: fixed;
+    background-color: #b5f9d8de;
+    z-index: 999;
+    overflow: hidden;
+    height: 0px;
+}
+#menu.close{
+    min-height: 0px;
+}
+
+.logo-menu{
+    width:50px; 
+    vertical-align: bottom; 
+    margin-left: -15px;
+}
+#menu article .content-center{
+    width: 50%;
+    text-align: left;
+    display: none;
+    font-weight: normal;
+}
+#close{
+    transition: .1s all;
+    padding: 15px;
+}
+#close:hover{
+    cursor: pointer;
+    padding-top: 13px;
+    padding-bottom: 2px;
+    color: #fff;
+}
+#open{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    transition: .1s all;
+    padding: 15px;
+    z-index: 998;
+}
+#open:hover{
+    cursor: pointer;
+    padding-top: 13px;
+    padding-bottom: 2px;
+    color: #d1f0ee;
+}
 /* fundo */
 .overlay-bg{
     position: fixed;
@@ -159,7 +205,7 @@ hr{
     margin: auto;
     border-radius: 100% 0px 100% 100%;
     transform: rotate(-225deg);
-    z-index: -1;
+    z-index: 1;
 }
 #seg .bubble-text{
     position: absolute;
@@ -191,6 +237,16 @@ hr{
 .title h1{
     font-family: 'Futura Bold';
 }
+.img-repense{
+    margin-top: 25vw;
+    max-width: 150px;
+}
+.img-gar{
+    max-width: 220px;
+}
+.img-gar.um{transform: rotate(-20deg);}
+.img-gar.dois{transform: rotate(20deg);}
+
 /* quarto! */
 #quar .bubble{
     float: none;
@@ -199,7 +255,7 @@ hr{
     width: 540px;
     border-radius: 100% 0px 100% 100%;
     transform: rotate(-225deg);
-    z-index: -1;
+    z-index: 1;
 }
 #quar .bubble-text{
     position: absolute;
@@ -234,7 +290,7 @@ hr{
     margin: auto;
     border-radius: 100% 0px 100% 100%;
     transform: rotate(-225deg);
-    z-index: -1;
+    z-index: 1;
 }
 #qui .bubble-text{
     position: absolute;
@@ -254,7 +310,7 @@ hr{
     width: 540px;
     border-radius: 100% 0px 100% 100%;
     transform: rotate(-225deg);
-    z-index: -1;
+    z-index: 1;
 }
 #sex .bubble-text{
     position: absolute;
@@ -264,6 +320,12 @@ hr{
     width: 335px;
     height: 380px;
     padding-left: 8px;
+}
+#sex .bubble-img-container{
+    display: inline-block;
+}
+.img-lixo{
+    max-width: 350px;
 }
 .drop{
 	width: 350px;
@@ -332,6 +394,10 @@ footer{
     }
 }
 @media (max-width: 767px){
+    .logo-menu{
+        width: 45px;
+        margin-left: -45px;
+    }
     .site-title{
         font-size: 50pt;
         line-height: 40pt;
@@ -409,5 +475,12 @@ footer{
     }
     .overlay-bg{
     	background-size: 400px auto;
+    }
+    .img-gar{
+        max-width: 150px;
+    }
+    .logo-menu{
+        width:35px; 
+        margin-left: -35px;
     }
 }

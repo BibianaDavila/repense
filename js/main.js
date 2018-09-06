@@ -1,3 +1,13 @@
+var rotation = 0;
+var rotation1 = 0;
+
+jQuery.fn.rotate = function(degrees) {
+    $(this).css({'-webkit-transform' : 'rotate('+ degrees +'deg)',
+                 '-moz-transform' : 'rotate('+ degrees +'deg)',
+                 '-ms-transform' : 'rotate('+ degrees +'deg)',
+                 'transform' : 'rotate('+ degrees +'deg)'});
+    return $(this);
+};
 function animation(){
 	var scroll = $(document).scrollTop();
 	$('.overlay-bg').css('background-position-y',scroll/4);
@@ -41,7 +51,13 @@ function animation(){
 	}
 	/* quinto */
 	else if(scroll<sec6){
-
+		var offset = $('#qui').offset();
+		var scroll2 = scroll - offset.top;
+		$('.img-gar').css('marginTop',100-scroll2/2);
+		rotation -= 5;
+    	$('.img-gar.um').rotate(rotation);
+    	rotation1 += 5;
+    	$('.img-gar.dois').rotate(rotation1);
 	}
 	/* sexto */
 	else if(scroll<sec7){
@@ -66,5 +82,24 @@ $(document).ready(function(){
 
 	$(window).scroll(function(){
 		animation();
+	});
+	$('#close').click(function(){
+
+		$('#menu').addClass('close');
+		$('#menu').find('article .content-center').hide();
+	   	$('#menu').animate({height: 0}, 400);
+	   	$('#open').show();
+
+	});
+	$('#open').click(function(){
+
+		$('#open').hide();
+		$('#menu').removeClass('close');
+		$('#menu').find('article .content-center').show();
+	   	 var curHeight = $('#menu').height(),
+		   	autoHeight = $('#menu').css('height', 'auto').height();
+
+		$('#menu').height(curHeight).animate({height: autoHeight}, 200);
+
 	});
 });
