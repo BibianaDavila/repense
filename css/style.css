@@ -30,6 +30,12 @@ body{
     left: 0;
     overflow-x: hidden;
 }
+a{
+    text-decoration: underline;
+    color: #115b47;
+    font-weight: bold;
+    transition: .1s all;
+}
 .site-wrapper{
 	max-width: 100vw;
     overflow: hidden;
@@ -73,7 +79,7 @@ hr{
 }
 #menu{
     position: fixed;
-    background-color: #b5f9d8de;
+    background-color: #d6f7f0fa;
     z-index: 999;
     overflow: hidden;
     height: 0px;
@@ -482,5 +488,9 @@ footer{
     .logo-menu{
         width:35px; 
         margin-left: -35px;
+    }
+    #menu article .content-center{
+        width: 100%;
+        padding: 50px;
     }
 }
