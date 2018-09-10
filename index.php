@@ -130,7 +130,7 @@
 
 						<p><h5>LIXO SECO:</h5> Tudo que pode ser reciclado, como plástico, papel, vidro, alumínio. </p>
 
-						<p><h5>LIXO MOLHADO:</h5> O que não pode ser reaproveitado, como resíduos orgânicos e papel sujo ou molhado.</p>
+						<p><h5>LIXO ÚMIDO:</h5> O que não pode ser reaproveitado, como resíduos orgânicos e papel sujo ou molhado.</p>
 
 					</div>
 				</div>
